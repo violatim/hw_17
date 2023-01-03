@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travels</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+<div class="left_side">
+    <form>
+        <span>New travel:</span>
+        <div>
+            <input type="text" id="city" placeholder="City" required>
+        </div>
+        <div>
+            <input type="text" id="country" placeholder="Country" required>
+        </div>
+        <div>
+            <input type="text" id="butget" placeholder="Butget">
+        </div>
+
+        <div>
+            <label for="date_start">Date start:</label>
+            <input type="date" id="date_start">
+        </div>
+
+        <div>
+            <label for="date_end">Date end:</label>
+            <input type="date" id="date_end">
+        </div>
+        <div>
+            <label for="person">Person:</label><br>
+            <select id="person">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+            </select>
+        </div>
+        <div>
+            <label for="transfer">Main transfer type:</label><br>
+            <select id="transfer">
+                <option>---</option>
+                <option>Bus</option>
+                <option>Private car</option>
+                <option>Railway</option>
+                <option>Fly</option>
+                <option>Rent car</option>
+                <option>Taxi</option>
+            </select>
+        </div>
+        <div>
+            <button id="task">Save travel</button>
+        </div>
+    </form>
+</div>
+<div class="right_side">
+    <span>Travel history:</span>
+    <div id="output_items"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
